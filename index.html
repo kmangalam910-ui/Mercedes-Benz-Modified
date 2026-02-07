@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Project</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="p-5 flex bg-black justify-around items-center">
+        <div class="nav-left">
+            <ul class="flex items-center">
+                <li class="text-gray-100 bars"><i class="text-xl fa-solid fa-bars"></i></li>
+                <li class="design">Models</li>
+                <li class="design">Buy</li>
+                <li class="design">Service</li>
+                <li class="design">Brand</li>
+            </ul>
+        </div>
+
+        <div class="nav-center flex justify-between items-center">
+            <div class="logo">
+                <img src="assets/mercedes logo.svg" class="hover:rotate-180 hover:scale-125 transition-all duration-700">
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <ul class="flex items-center">
+                <li class="design2 text w-30">Provider/..</li>
+
+                <li class="design2 search w-15"><i class="ri-search-line text-2xl"></i></li>
+
+                <li class="design2 w-15"><i class="ri-poker-hearts-fill text-2xl"></i></li>
+
+                <li class="design2 w-15"><i class="ri-map-pin-fill text-2xl"></i></li>
+
+                <div class="design2  flex items-center justify-center">
+                    <i class="text-2xl fa-solid fa-user"></i>
+                    <div class="login">
+                        <span class="text-xs leading-0">Private Customer <br>Login</span>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+<div class="fixed-logo fixed bottom-10 right-8 shadow-2xl shadow-black rounded-full border-4 border-white z-10">
+    <img src="assets/mercedea logo2.avif" height="10px" class="rounded-full max-sm:ml-10 fixed bottom-10 right-8 size-17">
+</div>
+
+    <div class="hero-section">
+        <div class="hero-image relative z-0">
+            <img src="assets/mercedes.avif" class="bg-cover">
+            
+
+        </div>
+
+        <div class="hero-content bg-black pb-4 pt-30">
+            <h1 class="text-white text-center text-4xl">140 Years of Innovation</h1>
+            <p class="text-gray-300 text-center mt-6 mb-12">This is our legacy. Imagine our Future</p>
+            <div class="button hover:bg-gray-950">
+                <a href="">
+                    <button>Watch World Premier</button>
+                </a>
+            </div>
+
+            <div class="button bg-blue-500 hover:bg-blue-600">
+                <a href="">
+                    <button>Learn more</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="small-btn flex justify-center mt-5">
+        <button class="sm-btn mr-2 hover:bg-black hover:text-gray-300">Mercedes-Benz</button>
+
+        <div class="sm-btn mr-2 hover:bg-black hover:text-gray-300">AMG</div>
+
+        <button class="sm-btn hover:bg-black hover:text-gray-300">MAYBACH</button>
+    </div>
+    
+    <div class="carousel-container car-con">
+        <h1 class="mb-6 text-3xl font-bold">Our Recomendations.</h1>
+        <button class="nav-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+  
+        <div class="carousel-wrapper" id="carousel">
+                <div class="card">
+                    <img src="assets/slider1.webp" alt="MB Charge">
+                    <div class="card-content">
+                        <h3>Discover MB.CHARGE Public</h3>
+                        <p>One stop solution for your EV journey!</p>
+                        <button class="learn-more">Learn more</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/slider2.avif" alt="GLS">
+                    <div class="card-content">
+                        <h3>GLS 450d 4MATIC</h3>
+                        <p>For greatness.</p>
+                        <button class="find-cars">Find available cars</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/slider3.avif" alt="GLC">
+                    <div class="card-content">
+                        <h3>GLC</h3>
+                        <p>Ready for it.</p>
+                        <button class="find-cars">Find available cars</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/slider4.avif" alt="GLC">
+                    <div class="card-content">
+                        <h3>GLC</h3>
+                        <p>Ready for it.</p>
+                        <button class="find-cars">Find available cars</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="assets/slider5.avif" alt="GLC">
+                    <div class="card-content">
+                        <h3>GLC</h3>
+                        <p>Ready for it.</p>
+                        <button class="find-cars">Find available cars</button>
+                    </div>
+                </div>
+            </div>
+
+        <button class="nav-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+
+    <div class="recomendation-section grid grid-cols-3 gap-10 px-10 my-10">
+        <h1 class="text-3xl font-bold">Our Recomendations.</h1>
+        <div class="content-recomendation col-start-1 col-end-3">
+            <img src="assets/slider1.webp" class="h-107 w-full transition-all duration-700 hover:scale-102">
+            <div class="img-content bg-black px-10 pb-8">
+                <p class="text-gray-200 pt-4 pb-4 text-2xl font-bold">Discover MB.CHARGE</p>
+                <p class="text-gray-200 pt-1 pb-6">Public One stop solution for your EV journey!</p>
+                <button class="button2 mb-1.5">Learn more</button>
+            </div>
+        </div>
+
+        <div class="content-recomendation">
+            <img src="assets/slider2.avif" class="transition-all duration-700 hover:scale-105 h-107 w-full">
+            <div class="img-content bg-black px-10 pb-8">
+                <p class="text-gray-200 pt-4 pb-4 text-2xl font-bold">The all new GLS 450d 4MATIC AMG Line</p>
+                <p class="text-gray-200 pt-1 pb-6">Committed to greatness.</p>
+                <div class="flex">
+                    <button class="button2">Find available cars</button>
+                    <p class="text-gray-200 ml-7 mt-7 underline text-xl font-bold hover:text-gray-400 cursor-pointer transition-all duration-500">Learn more</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-recomendation">
+            <img src="assets/slider3.avif" class="transition-all duration-700 hover:scale-105 h-100 w-full">
+            <div class="img-content bg-black px-10 pb-8">
+                <p class="text-gray-200 pt-4 pb-4 text-2xl font-bold">GLE</p>
+                <p class="text-gray-200 pt-1 pb-6">Committed to greatness.</p>
+                <div class="flex">
+                    <button class="button2">Know you way.</button>
+                    <p class="text-gray-200 ml-7 mt-7 underline text-xl font-bold hover:text-gray-400 cursor-pointer transition-all duration-500">Learn more</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-recomendation">
+            <img src="assets/slider4.avif" class="transition-all duration-700 hover:scale-105 h-100 w-full">
+            <div class="img-content bg-black px-10 pb-8">
+                <p class="text-gray-200 pt-4 pb-4 text-2xl font-bold">GLC</p>
+                <p class="text-gray-200 pt-1 pb-6">Ready for it.</p>
+                <div class="flex">
+                    <button class="button2">Find available cars</button>
+                    <p class="text-gray-200 ml-7 mt-7 underline text-xl font-bold hover:text-gray-400 cursor-pointer transition-all duration-500">Learn more</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-recomendation">
+            <img src="assets/slider5.avif" class="transition-all duration-700 hover:scale-105 h-100 w-full">
+            <div class="img-content bg-black px-10 pb-8">
+                <p class="text-gray-200 pt-4 pb-4 text-2xl font-bold">GLA</p>
+                <p class="text-gray-200 pt-1 pb-6">For dreams that raise the bar.</p>
+                <div class="flex">
+                    <button class="button2">Find available cars</button>
+                    <p class="text-gray-200 ml-7 mt-7 underline text-xl font-bold hover:text-gray-400 cursor-pointer transition-all duration-500">Learn more</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-section1 px-10 py-10">
+        <div class="text-content">
+            <p class="text-3xl font-bold mb-8">The perfect blend of luxury, sportiness and performance: Discover our latest models</p>
+        </div>
+
+        <div class="cars-list grid max-lg:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+            <div class="car-1 flex justify-between items-center bg-gray-300 px-4 py-5 mb-5 lg:mr-5">
+                <div class="deals">
+                    <span>Discover the models</span>
+                    <p class="text-xl font-semibold">Limousine</p>
+                </div>
+                <div class="deals-img float-right">
+                    <img src="assets/car_3.avif" class="w-90 h-40 hover:rotate-45 transition-all duration-700">
+                </div>
+            </div>
+
+            <div class="car-2 flex justify-between items-center bg-gray-300 px-4 py-5 mb-5 lg:mr-5">
+                <div class="deals">
+                    <span>Discover the models</span>
+                    <p class="text-xl font-semibold">SUV Ranges</p>
+                </div>
+                <div class="deals-img float-right">
+                    <img src="assets/car_2.avif" class="h-40 w-90 hover:rotate-45 transition-all duration-700">
+                </div>
+            </div>
+
+            <div class="car-3 flex justify-between items-center bg-gray-300 px-4 py-5 mb-5 lg:mr-5">
+                <div class="deals">
+                    <span>Discover the models</span>
+                    <p class="text-xl font-semibold">Cabriolets / Roadsters</p>
+                </div>
+                <div class="deals-img float-right">
+                    <img src="assets/car 3.avif" class="h-40 w-90 hover:rotate-45 transition-all duration-700">
+                </div>
+            </div>
+        </div>
+
+        <div class="new-btns lg:flex items-center justify-center">
+            <button class="button2 max-lg:w-full lg:mr-5">Discover all models</button>
+            <button class="button2 max-lg:w-full">Discover electric models</button>
+        </div>
+    </div>
+
+    <div class="explore-section_2 mx-12 mt-20">
+        <div class="car-section grid lg:grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-5">
+            
+            <div class="car_1 px-5 shadow-2xl shadow-amber-500 py-5">
+                <img src="assets/csr1.webp" class="h-40 w-70 transition-all duration-500 hover:scale-105">
+
+                <p class="bg-blue-500 rounded-2xl px-4 text-center text-white">140 years of Innovation - Feb 2026 <sup>[1]</sup></p>
+
+                <h1 class="text-2xl text-center font-semibold mt-5">GLA 200</h1>
+
+                <p class="text-sm text-center mt-10">120 KW (163 HP)<i class="ri-oil-line mx-4"></i>Petrol<i class="ri-settings-5-line mx-4"></i>Automatic</p>
+
+                <div class="button2 bg-white text-black border-amber-300 hover:bg-amber-100">
+                    <i class="ri-error-warning-line mr-4 text-4xl text-amber-400"></i>Pincode is not provided
+                </div>
+
+                <div class="button2 bg-white text-blue-500 hover:bg-blue-500 hover:text-white">Explore & Buy</div>
+            </div>
+
+            <div class="car_2 px-5 shadow-2xl shadow-amber-500 py-5">
+                <img src="assets/csr2.webp" class="h-40 w-70 transition-all duration-500 hover:scale-105">
+
+                <p class="bg-blue-500 rounded-2xl px-4 text-center text-white">140 years of Innovation - Feb 2026 <sup>[1]</sup></p>
+
+                <h1 class="text-2xl text-center font-semibold mt-5">C 200</h1>
+
+                <p class="text-sm text-center mt-10">150 KW (204 HP)<i class="ri-oil-line mx-4"></i>Petrol<i class="ri-settings-5-line mx-4"></i>Automatic</p>
+
+                <div class="button2 bg-white text-black border-amber-300 hover:bg-amber-100">
+                    <i class="ri-error-warning-line mr-4 text-4xl text-amber-400"></i>Pincode is not provided
+                </div>
+
+                <div class="button2 bg-white text-blue-500 hover:bg-blue-500 hover:text-white">Explore & Buy</div>
+            </div>
+
+            <div class="car_3 px-5 shadow-2xl shadow-amber-500 py-5">
+                <img src="assets/csr3.webp" class="h-40 w-70 transition-all duration-500 hover:scale-105">
+
+                <p class="bg-blue-500 rounded-2xl px-4 text-center text-white">140 years of Innovation - Feb 2026 <sup>[1]</sup></p>
+
+                <h1 class="text-2xl text-center font-semibold mt-5">GLE 300d 4MATIC AMG Line</h1>
+
+                <p class="text-sm text-center mt-10">198 KW (269 HP)<i class="ri-oil-line mx-4"></i>Diesel<i class="ri-settings-5-line mx-4"></i>Automatic</p>
+
+                <div class="button2 bg-white text-black border-amber-300 hover:bg-amber-100">
+                    <i class="ri-error-warning-line mr-4 text-4xl text-amber-400"></i>Pincode is not provided
+                </div>
+
+                <div class="button2 bg-white text-blue-500 hover:bg-blue-500 hover:text-white">Explore & Buy</div>
+            </div>
+        </div>
+
+        <div class="available my-10 p-5 shadow-amber-400 shadow-2xl">
+            <h1 class="text-2xl font-semibold my-2">Can't find a suitable vehicle?</h1>
+            <p class="text-sm font-light my-2">Discover more immediately available vehicles in the Mercedes-Benz Store.</p>
+            <div class="button2">Show available vehicles</div>
+        </div>
+    </div>
+
+    <div class="carousel-container h-80">
+        <h1 class="mb-6 text-3xl font-bold">Service & Accessories</h1>
+        <button class="nav-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+  
+        <div class="carousel-wrapper" id="carousel">
+                <div class="card1">
+                    <img src="assets/ser1.webp" alt="MB Charge" class="">
+                    <div class="card-content">
+                        <h3 class="text-2xl font-semibold my-2">Digital extras for your Mercedes-Benz</h3>
+                        <p class="font-normal my-4">Simply book additional digital extras and experience your Mercedes-Benz in a new way.</p>
+                        <button class="button2">Book online now</button>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <img src="assets/ser2.avif" alt="GLS">
+                    <div class="card-content">
+                        <h3 class="text-2xl font-semibold my-2">Maintenance and Service</h3>
+                        <p class="font-normal my-7">Enjoy Peace of Mind with Mercedes-Benz Service, Maintenance and Repair.</p>
+                        <button class="button2">Learn more</button>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <img src="assets/ser3.avif" alt="GLC">
+                    <div class="card-content">
+                        <h3 class="text-2xl font-semibold my-2">Paint Protection Film</h3>
+                        <p class="font-normal my-4">Protect your Mercedes-Benz with our newly launched Paint Protection Film, unmatched protection, flawless shine.</p>
+                        <button class="button2">Enquire Now</button>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <img src="assets/ser4.avif" alt="GLC">
+                    <div class="card-content">
+                        <h3 class="text-2xl font-semibold my-2">Mercedes-Benz Collection Items</h3>
+                        <p class="font-normal my-4">Discover Mercedes-Benz Collection: Superior quality, iconic design, crafted with passion.</p>
+                        <button class="button2">Explore at an outlet near you</button>
+                    </div>
+                </div>
+
+            </div>
+
+        <button class="nav-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+
+    <div class="last-content grid lg:grid-cols-2 max-lg:grid-cols-1 mt-96 px-5 py-8 items-center justify-center gap-10">
+
+        <div class="data px-20">
+            <h1 class="text-2xl font-semibold my-3">DEFINING CLASS since 1886.</h1>
+            <p class="font-normal">A lot has changed since the invention of the automobile in 1886. With each decade, we have been able to further develop the technology that began with us - and still do today. This is how a car became more than a car.</p>
+            <button class="button2 max-lg:hidden">Learn more</button>
+        </div>
+
+        <div class="vid-content mt-5">
+            <video src="https://www.mercedes-benz.co.in/content/dam/hq/passengercars/mb-oc/liI-tvc-30s-eqs-wodp-wsf-weotr-16-9-vo-en-hqmaster-l-ending-h264-1-1.mp4" controls></video>
+
+            <button class="button2 w-full lg:hidden">Learn more</button>
+        </div>
+
+        <div class="img-content mt-5">
+            <img src="https://www.mercedes-benz.co.in/content/dam/india/passengercars/new-homepage/7798202_DefiningClass_still_KV2_300SL_Gullwing_high_RGB.jpg/1746543608983.jpg?im=Crop,rect=(0,135,1080,810);Resize=(800,600)"></img>
+
+            <button class="button2 w-full lg:hidden">Learn more</button>            
+        </div>
+
+        <div class="data px-20">
+            <h1 class="text-2xl font-semibold my-5">History and brand world.</h1>
+            <p class="font-normal">The Mercedes star is more than just a logo. Mercedes-Benz stands for exciting experiences based on timeless design, cutting-edge technology and attention to detail.</p>
+            <button class="button2 max-lg:hidden">Learn more</button>
+        </div>
+
+    </div>
+
+    <div class="disclaimer-section mx-10 px-5 py-5">
+        <h1 class="text-2xl font-semibold mb-7">Disclaimer</h1>
+        <p class="text-[10px] leading-6">Accessories, colors and fitments shown may not be a part of standard specifications. For detailed technical specification and price of the model available in India, please refer to the product brochure or contact the nearest Mercedes-Benz Franchise Partner.</p>
+    </div>
+
+    <div class="disclaimer-card my-8 mx-5 grid lg:grid-cols-4 gap-4">
+        <div class="cd1 text-center w-full p-6 bg-gray-100 shadow-md shadow-gray-400 transition-all duration-500 hover:scale-90">
+            <i class="ri-shopping-cart-line text-3xl"></i>
+            <h1 class="text-xl font-bold">Mercedes-Benz Store</h1>
+            <p>Discover your new Mercedes.</p>
+        </div>
+
+        <div class="cd1 text-center w-full p-6 bg-gray-100 shadow-md shadow-gray-400 transition-all duration-500 hover:scale-90">
+            <i class="ri-key-fill text-3xl"></i>
+            <h1 class="text-xl font-bold">Dealer locator</h1>
+            <p>Find a Mercedes-Benz dealer.</p>
+        </div>
+
+        <div class="cd1 text-center w-full p-6 bg-gray-100 shadow-md shadow-gray-400 transition-all duration-500 hover:scale-90">
+            <i class="ri-settings-4-line text-3xl"></i>
+            <h1 class="text-xl font-bold">Configurator</h1>
+            <p>Configure your vehicle now.</p>
+        </div>
+
+        <div class="cd1 text-center w-full p-6 bg-gray-100 shadow-md shadow-gray-400 transition-all duration-500 hover:scale-90">
+            <i class="ri-calculator-line text-3xl"></i>
+            <h1 class="text-xl font-bold">Finance & Insurance</h1>
+            <p>Find the right financial product for you.</p>
+        </div>
+
+    </div>
+
+    <footer class="footer-section bg-black w-full mt-6 grid lg:grid-cols-6 max-lg:grid-cols-3 gap-5 px-8 py-5">
+        <div class="footer-content text-white">
+            <h1 class="font-bold text-xl">Popular Models</h1>
+            <p class="transition-all duration-700">Electric Cars</p>
+            <p class="transition-all duration-700">SUV</p>
+            <p class="transition-all duration-700">Cabrioletd & Roadsters</p>
+            <p class="transition-all duration-700">Coupe</p>
+            <p class="transition-all duration-700">Plug-in Hybrid</p>
+        </div>
+
+        <div class="footer-content text-white">
+            <h1 class="font-bold text-xl">Buy a Vehicle</h1>
+            <p class="transition-all duration-700">Find a new car</p>
+            <p class="transition-all duration-700">Configure your car</p>
+            <p class="transition-all duration-700">All brochures</p>
+            <p class="transition-all duration-700">Model overview</p>
+            <p class="transition-all duration-700">Corporate Program</p>
+        </div>
+
+        <div class="footer-content text-white">
+            <h1 class="font-bold text-xl">Shopping Guide</h1>
+            <p class="transition-all duration-700">Book a test drive</p>
+            <p class="transition-all duration-700">Nearest Showroom</p>
+            <p class="transition-all duration-700">Finance</p>
+            <p class="transition-all duration-700">Mercedes-Benz Collection</p>
+        </div>
+
+        <div class="footer-content text-white max-lg:mt-15">
+            <h1 class="font-bold text-xl">Owners</h1>
+            <p class="transition-all duration-700">Book a service appointment</p>
+            <p class="transition-all duration-700">Owner's Manuals</p>
+            <p class="transition-all duration-700">Service warranty terms and conditions</p>
+            <p class="transition-all duration-700">Grivance Redressal Mechanism</p>
+            <p class="transition-all duration-700">FAQ</p>
+            <p class="transition-all duration-700">How-to Videos</p>
+        </div>
+
+        <div class="footer-content text-white max-lg:mt-15">
+            <h1 class="font-bold text-xl">Technology</h1>
+            <p class="transition-all duration-700">Electric mobility</p>
+            <p class="transition-all duration-700">About Mercedes me</p>
+            <p class="transition-all duration-700">Connect services</p>
+            <p class="transition-all duration-700">MB.CHARGE Public</p>
+        </div>
+
+        <div class="footer-content text-white max-lg:mt-15">
+            <h1 class="font-bold text-xl">Discover Mercedes</h1>
+            <p class="transition-all duration-700">Contract</p>
+            <p class="transition-all duration-700">Secretarial Compliance Disclosure</p>
+            <p class="transition-all duration-700">Press Release</p>
+            <p class="transition-all duration-700">Careers</p>
+            <p class="transition-all duration-700">Privacy</p>
+            <p class="transition-all duration-700">Fair Practice Code</p>
+            <p class="transition-all duration-700">Corporate Governance Policy (MBFS)</p>
+            <p class="transition-all duration-700">Ombudsman Scheme for NBFS</p>
+        </div>
+        
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
